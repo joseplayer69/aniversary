@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuestro pequeño universo ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         PANTALLA DE CONTRASEÑA
+    ========================================== -->
+
+    <section id="bloqueo">
+
+        <div class="bloqueo-contenido">
+
+            <div class="candado">♡</div>
+
+            <p class="texto-pequeno">
+                UN PEQUEÑO SECRETO
+            </p>
+
+            <h1>Solo para ti</h1>
+
+            <p class="subtitulo">
+                Hay algo esperándote al otro lado...
+            </p>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Contraseña"
+                autocomplete="off"
+            >
+
+            <button id="desbloquear">
+                Entrar ✦
+            </button>
+
+            <p id="errorPassword"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FONDO
+    ========================================== -->
+
+    <div class="stars"></div>
+
+    <div class="shooting-star"></div>
+
+
+    <!-- =========================================
+         MÚSICA
+    ========================================== -->
+
+    <audio id="musica" loop>
+
+        <source src="music/Laufey - Valentine (Official Audio).mp3" type="audio/mpeg">
+
+    </audio>
+
+
+    <main>
+
+
+        <!-- =========================================
+             INICIO
+        ========================================== -->
+
+        <section id="inicio" class="pantalla">
+
+            <div class="contenido-inicio">
+
+                <div class="corazon">❤️</div>
+
+                <p class="texto-pequeno">
+                    Para la persona que hace especial mis días...
+                </p>
+
+                <h1>Nuestro pequeño universo</h1>
+
+                <p class="subtitulo">
+                    Hay algo que quiero decirte.
+                </p>
+
+                <button id="entrar">
+                    Entrar ✨
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PRIMER RECUERDO
+        ========================================== -->
+
+        <section id="historia" class="seccion">
+
+            <div class="foto-container">
+
+                <img
+                    src="imag/primera-foto.jpeg"
+                    alt="Nuestro primer recuerdo"
+                >
+
+            </div>
+
+
+            <div class="texto-recuerdo">
+
+                <span class="etiqueta">
+                    UN PEQUEÑO RECUERDO
+                </span>
+
+                <h2>
+                    Feliz Aniversario
+                    a la más cojonshita ❤️
+                </h2>
+
+                <p>
+                    De todos los momentos que hemos compartido,
+                    este es solo uno de los tantos que quiero
+                    guardar para siempre.
+                </p>
+
+            </div>
+
+
+            <button class="boton-siguiente" id="irCarta">
+                Continuar ↓
+            </button>
+
+        </section>
+
+
+        <!-- =========================================
+             CARTA
+        ========================================== -->
+
+        <section id="carta" class="seccion">
+
+            <button class="volver" id="volverHistoria" aria-label="Volver">
+                ←
+            </button>
+
+            <div class="carta-container">
+
+                <span class="etiqueta">
+                    PARA TI
+                </span>
+
+                <h2>Quería decirte algo...</h2>
+
+                <p id="textoCarta"></p>
+
+            </div>
+
+
+            <button class="boton-siguiente" id="irTiempo">
+                Continuar ↓
+            </button>
+
+        </section>
+
+
+        <!-- =========================================
+             CONTADOR
+        ========================================== -->
+
+        <section id="tiempo" class="seccion">
+
+            <!-- OJO: cambié este ID porque no puede repetirse -->
+            <button class="volver" id="volverCarta" aria-label="Volver">
+                ←
+            </button>
+
+            <span class="etiqueta">
+                DESDE QUE TODO COMENZÓ
+            </span>
+
+            <h2>Todo este tiempo contigo ❤️</h2>
+
+            <div class="contador">
+
+                <div class="tiempo-box">
+                    <span id="dias">0</span>
+                    <small>Días</small>
+                </div>
+
+                <div class="tiempo-box">
+                    <span id="horas">0</span>
+                    <small>Horas</small>
+                </div>
+
+                <div class="tiempo-box">
+                    <span id="minutos">0</span>
+                    <small>Minutos</small>
+                </div>
+
+                <div class="tiempo-box">
+                    <span id="segundos">0</span>
+                    <small>Segundos</small>
+                </div>
+
+            </div>
+
+
+            <p class="frase-tiempo">
+                Y todavía quedan muchísimos momentos por vivir.
+            </p>
+
+
+            <button class="boton-siguiente" id="irFotos">
+                Ver nuestros recuerdos ↓
+            </button>
+
+        </section>
+
+
+        <!-- =========================================
+             GALERÍA
+        ========================================== -->
+
+        <section id="fotos" class="seccion">
+
+            <button class="volver" id="volverTiempo" aria-label="Volver">
+                ←
+            </button>
+
+            <span class="etiqueta">
+                NUESTROS MOMENTOS
+            </span>
+
+            <h2>Algunos recuerdos contigo 📸</h2>
+
+
+            <div class="galeria">
+
+                <div class="foto-galeria">
+
+                    <img
+                        src="imag/imagen1.jpeg"
+                        alt="Recuerdo 1"
+                    >
+
+                </div>
+
+
+                <div class="foto-galeria">
+
+                    <img
+                        src="imag/imagen2.jpeg"
+                        alt="Recuerdo 2"
+                    >
+
+                </div>
+
+
+                <div class="foto-galeria">
+
+                    <img
+                        src="imag/imagen3.jpeg"
+                        alt="Recuerdo 3"
+                    >
+
+                </div>
+
+
+                <div class="foto-galeria">
+
+                    <img
+                        src="imag/imagen4.jpeg"
+                        alt="Recuerdo 4"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button class="boton-siguiente" id="irFinal">
+                Una última cosa... ✨
+            </button>
+
+        </section>
+
+
+        <!-- =========================================
+             FINAL
+        ========================================== -->
+
+        <section id="final" class="seccion">
+
+            <button class="volver" id="volverFotos" aria-label="Volver">
+                ←
+            </button>
+
+            <div class="final-container">
+
+                <div class="corazon-final">
+                    ❤️
+                </div>
+
+                <h2>Gracias por existir.</h2>
+
+                <p>
+                    Espero que cada vez que mires estas estrellas
+                    recuerdes que, en algún lugar, hay alguien
+                    que tuvo la suerte de encontrarte.
+                </p>
+
+                <p class="final-grande">
+                    Te quiero ❤️
+                </p>
+
+                <div class="estrellas-final">
+                    ✦ &nbsp; ✧ &nbsp; ✦
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
